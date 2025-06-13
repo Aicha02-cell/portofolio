@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Aïssata Sanogo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #ff6600;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #ff6600;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      border-bottom: 2px solid #ff6600;
+      padding-bottom: 0.5rem;
+    }
+    .competence-list, .project-list, .experience-list {
+      list-style: none;
+      padding: 0;
+    }
+    .competence-list li, .project-list li, .experience-list li {
+      background-color: #fff;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-left: 5px solid #ff6600;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Aïssata Sanogo</h1>
+    <p>Développeuse Junior | Informatique de Gestion | Bamako, Mali</p>
+  </header>
+
+  <nav>
+    <a href="#about">Qui suis-je ?</a>
+    <a href="#skills">Mes Compétences</a>
+    <a href="#projects">Mes Projets</a>
+    <a href="#experience">Mes Expériences</a>
+  </nav>
+
+  <section id="about">
+    <h2>Qui suis-je ?</h2>
+    <p>Je suis récemment diplômée en Informatique de Gestion à TECHNOLAB-ISTA. Rigoureuse, motivée et dotée d’un bon esprit d’équipe, je suis passionnée par le développement d'applications, la gestion de données et les systèmes d'information.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Mes Compétences</h2>
+    <ul class="competence-list">
+      <li><strong>Langages :</strong> C, C++, Java, PHP</li>
+      <li><strong>Web :</strong> HTML, CSS, JavaScript</li>
+      <li><strong>Base de données :</strong> MySQL</li>
+      <li><strong>Modélisation :</strong> UML, Merise</li>
+      <li><strong>Comptabilité :</strong> Sage100, analytique</li>
+      <li><strong>Bureautique :</strong> Word, Excel, PowerPoint, Outlook, Canva</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Mes Projets</h2>
+    <ul class="project-list">
+      <li><b>Projet de Fin d'etudes - Application de gestion de stock</b> <br>
+        <div class="project-card">
+
+  <p class="description">
+    Suivi simple des <strong>entrées</strong> et <strong>sorties</strong> de produits avec <span class="highlight">alertes de rupture</span>.
+  </p>
+  <p class="tech">
+    <strong>Technologies utilisées :</strong> 
+    <span class="tech-item">PHP (Back-end)</span>,
+    <span class="tech-item">MySQL (Base de données)</span>,
+    <span class="tech-item">HTML/CSS (Interface)</span>,
+    <span class="tech-item">JavaScript (Interactions)</span>
+  </p>
+  <a href="https://github.com/aichasanogo/gestion-stock" target="_blank" class="github-link">
+    🔗 Voir sur GitHub
+  </a>
+</div>
+
+      </li>
+      <li>Application de gestion des salariés</li>
+      <li>Site web de recettes de cuisine</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Mes Expériences</h2>
+    <ul class="experience-list">
+      <li><strong>BNDA – Stagiaire</strong> (Nov 2024 – Jan 2025)<br>Attestations de non-endettement, gestion des exonérations, suivi des recouvrements</li>
+      <li><strong>GLOBAL MEDIA – Assistante comptable</strong> (Avr – Mai 2025)<br>Archivage, suivi de budget, animation réseaux sociaux, prospection</li>
+    </ul>
+  </section>
+
+  <script>
+    // Ajout simple de défilement doux
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
